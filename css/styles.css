@@ -1,0 +1,82 @@
+:root{
+    --fuente-principal: 'Lexend Deca', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--fuente-principal);
+}
+body{
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+.contenedor{
+    display: grid;
+    max-width: 102rem;
+    width: 90%;
+    margin: 4rem auto;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+@media (min-width: 375px) {
+  .contenedor{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+  .imagen{
+    grid-column: 2 / 3;
+  }
+}
+.titulo{
+    color: hsl(0, 0%, 100%);
+    font-size: 3.5rem;
+}
+@media (min-width: 375px) {
+  .titulo{
+    font-size: 4.5rem;
+}
+}
+.principal{
+    margin: 3rem 3rem 3rem 3rem;
+    text-align: center;
+}
+@media (min-width: 375px) {
+  .principal{
+    text-align: start;
+  }
+}
+.parrafo-principal{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    font-size: 1.8rem;
+}
+.subtitulos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+.numero{
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+}
+.subparrafo{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.imagen{
+    overflow: hidden;
+    grid-row: 1 / 2;
+    position: relative;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.campo{
+    text-transform: uppercase;
+}

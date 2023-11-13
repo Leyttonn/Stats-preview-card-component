@@ -70,6 +70,16 @@ body{
     grid-row: 1 / 2;
     position: relative;
 }
+.imagen::after{
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    position: absolute;
+    background-color: hsl(277, 64%, 61%);
+    content: '';
+    left: 0;
+    right: 0;
+}
 img{
     height: 100%;
     width: 100%;
